@@ -1,0 +1,103 @@
+/* Reseta margens e define a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da tela inteira usando a cor mais escura */
+body {
+    background-color: #120C2E;
+    color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Caixa central do login usando a cor intermediária */
+.login-container {
+    background-color: #1E154E;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Estilo do Logo temporário (até você subir a imagem) */
+.logo-text {
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* O ponto da logo na cor rosa */
+.logo-text span {
+    color: #FA3AE7;
+}
+
+.subtitle {
+    color: #74CEFF;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos campos de texto */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #E6E6E6;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #74CEFF;
+    background-color: #120C2E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: #FA3AE7;
+}
+
+/* Botão com gradiente das suas cores */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #74CEFF, #FA3AE7);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Mensagem de erro invisível por padrão */
+.erro-msg {
+    color: #FA3AE7;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    display: none;
+}
