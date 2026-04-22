@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elev - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Elev<span>.</span></h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="menu-item ativo">Dashboard</a>
+                <a href="#" class="menu-item">Cursos e Combos</a>
+                <a href="#" class="menu-item">Alunos</a>
+                <a href="#" class="menu-item">Afiliados</a>
+                <a href="#" class="menu-item">Suporte</a>
+                <a href="#" class="menu-item">Meu Perfil</a>
+            </nav>
+            <button onclick="fazerLogout()" class="btn-logout">Sair</button>
+        </aside>
+
+        <main class="content">
+            <header class="top-bar">
+                <h1>Visão Geral</h1>
+                <div class="admin-info">Olá, Admin!</div>
+            </header>
+
+            <section class="cards-grid">
+                <div class="card">
+                    <h3>Vendas do Dia</h3>
+                    <p class="valor">R$ 0,00</p>
+                </div>
+                <div class="card">
+                    <h3>Vendas do Mês</h3>
+                    <p class="valor">R$ 0,00</p>
+                </div>
+                <div class="card">
+                    <h3>Alunos Ativos</h3>
+                    <p class="valor">0</p>
+                </div>
+                <div class="card">
+                    <h3>Afiliados Ativos</h3>
+                    <p class="valor">0</p>
+                </div>
+            </section>
+            
+            <section class="extra-info">
+                <p>Gráficos e Top Produtos serão implementados após criarmos os cursos!</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
