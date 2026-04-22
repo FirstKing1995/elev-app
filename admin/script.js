@@ -37,10 +37,9 @@ formLogin.addEventListener("submit", function(event) {
         btnLogin.disabled = false;
 
         if(dados.status === "sucesso") {
-            // Salva o login no navegador e vai para a Dashboard (que faremos a seguir)
             localStorage.setItem("adminLogado", "sim");
             alert("Login feito com sucesso! Vamos para a Dashboard...");
-            // window.location.href = "dashboard.html"; // Descomentaremos isso depois
+            window.location.href = "dashboard.html"; // Agora ele vai redirecionar!
         } else {
             // Mostra o erro
             msgErro.innerText = dados.mensagem;
